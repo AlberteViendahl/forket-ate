@@ -1,5 +1,9 @@
-const Loading = () => {
-  return ( <div><h1>Loadingpage</h1></div> );
+import Nav from "@/components/Nav";
+
+export default function Loading() {
+  return (
+    <div className="overflow-hidden">
+      <Nav />
+    </div>
+  );
 }
- 
-export default Loading;
