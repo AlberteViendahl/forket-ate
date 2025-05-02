@@ -21,7 +21,7 @@ function Navigation() {
 
   return (
     <header className="relative">
-      <nav className="flex justify-between items-center p-4">
+      <nav className="flex justify-between items-center p-4 bg-lightblue text-brown">
         {/* Logo */}
         <Link href="/">
           <img src="/img/logo.svg" alt="logo ikon" />
@@ -60,7 +60,6 @@ function Navigation() {
           )}
         </button>
 
-        {/* Menuen - samme UL til både mobil og desktop */}
         <ul
           className={`
             fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out flex-col gap-6 p-8
