@@ -15,6 +15,7 @@ module.exports = {
         lightblue: "#B7CBD4",
         beige: "#F5F5F2",
         white: "#FFFF",
+        orange: "#DBA581",
       },
       height: {
         20: "20px",

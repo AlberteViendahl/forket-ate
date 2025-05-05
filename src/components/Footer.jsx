@@ -1,4 +1,8 @@
 import Link from "next/link";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <div className="bg-lightblue text-center mx-auto grid grid-cols-1 md:grid-cols-3">
@@ -18,7 +22,11 @@ const Footer = () => {
         <p className="pb-10">ma@classichouse.dk</p>
       </div>
       <div className="md:col-start-3 self-end md:pb-10">
-        <p>SoMe</p>
+        <div className="flex justify-center ">
+          <FaInstagramSquare className="text-lilla xs:h-25 xs:w-25 lg:h-50 lg:w-50" />
+          <FaFacebookSquare className="text-lilla xs:h-25 xs:w-25 lg:h-50 lg:w-50" />
+          <FaTwitterSquare className="text-lilla xs:h-25 xs:w-25 lg:h-50 lg:w-50 mb-10" />
+        </div>
       </div>
     </div>
   );
