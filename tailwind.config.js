@@ -14,6 +14,7 @@ module.exports = {
         darkblue: "#35465F",
         lightblue: "#B7CBD4",
         beige: "#F5F5F2",
+        white: "#FFFF",
       },
       height: {
         20: "20px",
