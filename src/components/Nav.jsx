@@ -20,7 +20,7 @@ function Navigation() {
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   return (
-    <header className="relative">
+    <header className="relative bg-lightblue">
       <nav className="flex justify-between items-center p-4">
         {/* Logo */}
         <Link href="/">
