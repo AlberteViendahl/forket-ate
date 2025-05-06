@@ -1,5 +1,6 @@
 import CarrouselCard from "@/components/CarrouselCard";
 import Footer from "@/components/Footer";
+import Knap from "@/components/Knap";
 import KontaktOs from "@/components/KontaktOs";
 import Nav from "@/components/Nav";
 
@@ -7,6 +8,7 @@ export default function Loading() {
   return (
     <div className="overflow-hidden">
       <Nav />
+      <Knap />
       <KontaktOs cla />
       <section className="relative w-full">
         <img src="/img/video_desk.svg" alt="video" className="w-full h-auto" />
