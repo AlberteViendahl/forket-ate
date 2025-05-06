@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useForm } from "react-hook-form";
 import {
   FaInstagramSquare,
   FaFacebookSquare,
@@ -13,28 +13,21 @@ const supabase = createClient(
 );
 
 const Formel = () => {
-  const [formData, setFormData] = useState({
-    firstname: "",
-    lastname: "",
-    phone: "",
-    email: "",
-    message: "",
-  });
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
+  const onSubmit = async (data) => {
     const { error } = await supabase.from("kontakt_mig").insert([
       {
-        fornavn: formData.firstname,
-        efternavn: formData.lastname,
-        telefon: formData.phone,
-        email: formData.email,
-        besked: formData.message,
+        fornavn: data.firstname,
+        efternavn: data.lastname,
+        telefon: data.phone,
+        email: data.email,
+        besked: data.message,
       },
     ]);
 
@@ -43,13 +36,7 @@ const Formel = () => {
       console.error(error);
     } else {
       alert("Tak for din besked!");
-      setFormData({
-        firstname: "",
-        lastname: "",
-        phone: "",
-        email: "",
-        message: "",
-      });
+      reset();
     }
   };
 
@@ -61,68 +48,88 @@ const Formel = () => {
       <div className="sm:grid sm:grid-cols-3 pb-20">
         <div className="xs:text-center sm:ml-auto sm:text-left sm:col-span-1">
           <p className="font-extrabold">EMAIL</p>
-          <p className="pb-7">info@AnkjærEnterprise.com</p>
+          <p className="pb-7">ma@classichouse.dk</p>
 
           <p className="font-extrabold">TLF NUMMER</p>
-          <p className="pb-7">(+45) 12 34 56 78</p>
+          <p className="pb-7">(+45) 40 19 70 73</p>
 
           <p className="font-extrabold">ADRESSE</p>
-          <p className="pb-7">1234 Bueager Helsingør, Kbh, DK</p>
+          <p className="pb-7">Lillevangsvej 218, 3480 Fredensborg</p>
 
           <p className="font-extrabold">SOCIAL</p>
           <div className="xs:flex xs:justify-center sm:justify-start gap-2">
-            <FaInstagramSquare className="text-lilla h-8 w-8" />
-            <FaFacebookSquare className="text-lilla h-8 w-8" />
-            <FaTwitterSquare className="text-lilla h-8 w-8 mb-5" />
+            <FaInstagramSquare className="text-darkblue h-8 w-8" />
+            <FaFacebookSquare className="text-darkblue h-8 w-8" />
+            <FaTwitterSquare className="text-darkblue h-8 w-8 mb-5" />
           </div>
         </div>
 
         <hr className="pb-10 sm:hidden" />
 
         <form
-          onSubmit={handleSubmit}
+          onSubmit={handleSubmit(onSubmit)}
           className="xs:w-300 sm:w-500 mx-auto sm:col-span-2"
         >
           <input
-            name="firstname"
-            value={formData.firstname}
-            onChange={handleChange}
+            {...register("firstname", { required: "Fornavn er påkrævet" })}
             placeholder="Fornavn"
-            className="bg-beige mb-5 rounded-12 w-300 h-40 sm:w-500 border-[1px] border-black p-5"
+            className="bg-beige mb-2 rounded-12 w-300 h-40 sm:w-500 border-[1px] border-black p-5"
           />
-          <input
-            name="lastname"
-            value={formData.lastname}
-            onChange={handleChange}
-            placeholder="Efternavn"
-            className="bg-beige mb-5 rounded-12 w-300 sm:w-500 h-40 border-[1px] border-black p-5"
-          />
-          <input
-            name="phone"
-            value={formData.telefon}
-            onChange={handleChange}
-            placeholder="Tlf nummer"
-            className="bg-beige mb-5 rounded-12 w-300 sm:w-500 h-40 border-[1px] border-black p-5"
-          />
-          <input
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Email"
-            className="bg-beige mb-5 rounded-12 w-300 sm:w-500 h-40 border-[1px] border-black p-5"
-          />
-          <input
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            placeholder="Besked"
-            className="bg-beige mb-5 rounded-12 w-300 sm:w-500 h-40 border-[1px] border-black p-5"
-          />
+          {errors.firstname && (
+            <p className="text-red-500">{errors.firstname.message}</p>
+          )}
 
-          {/* Submit button */}
+          <input
+            {...register("lastname", { required: "Efternavn er påkrævet" })}
+            placeholder="Efternavn"
+            className="bg-beige mb-2 rounded-12 w-300 h-40 sm:w-500 border-[1px] border-black p-5"
+          />
+          {errors.lastname && (
+            <p className="text-red-500">{errors.lastname.message}</p>
+          )}
+
+          <input
+            {...register("phone", {
+              required: "Telefonnummer er påkrævet",
+              pattern: {
+                value: /^[0-9]+$/,
+                message: "Ugyldigt telefonnummer",
+              },
+            })}
+            placeholder="Tlf nummer"
+            className="bg-beige mb-2 rounded-12 w-300 sm:w-500 h-40 border-[1px] border-black p-5"
+          />
+          {errors.phone && (
+            <p className="text-red-500">{errors.phone.message}</p>
+          )}
+
+          <input
+            {...register("email", {
+              required: "Email er påkrævet",
+              pattern: {
+                value: /^\S+@\S+$/i,
+                message: "Ugyldig email-adresse",
+              },
+            })}
+            placeholder="Email"
+            className="bg-beige mb-2 rounded-12 w-300 sm:w-500 h-40 border-[1px] border-black p-5"
+          />
+          {errors.email && (
+            <p className="text-red-500">{errors.email.message}</p>
+          )}
+
+          <input
+            {...register("message", { required: "Besked er påkrævet" })}
+            placeholder="Besked"
+            className="bg-beige mb-2 rounded-12 w-300 sm:w-500 h-40 border-[1px] border-black p-5"
+          />
+          {errors.message && (
+            <p className="text-red-500">{errors.message.message}</p>
+          )}
+
           <button
             type="submit"
-            className="bg-orange text-white font-bold py-2 px-6 rounded hover:bg-lightblue"
+            className="bg-orange text-white font-bold py-2 px-6 rounded hover:bg-lightblue mt-4"
           >
             Send
           </button>
