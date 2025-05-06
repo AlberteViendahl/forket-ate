@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Knap from "@/components/Knap";
 import KontaktOs from "@/components/KontaktOs";
 import Nav from "@/components/Nav";
+import OmOs from "@/components/OmOs";
 
 export default function Loading() {
   return (
@@ -17,6 +18,7 @@ export default function Loading() {
         </h1>
       </section>
       <section className="bg-brown">
+        <OmOs />
         <CarrouselCard />
       </section>
       <Footer />
