@@ -2,10 +2,9 @@
 import { useForm } from "react-hook-form";
 import { createClient } from "@supabase/supabase-js";
 
-const supabase = createClient(
-  "https://xqyzgtfbeqewiqxklugh.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhxeXpndGZiZXFld2lxeGtsdWdoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY0NDEzNjcsImV4cCI6MjA2MjAxNzM2N30.r7-NWct6hmvWJZ-UeD-TU4y67FbhArhoEjcWkqHU4HM"
-);
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 const FormelKontaktOs = () => {
   const {
