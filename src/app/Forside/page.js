@@ -3,11 +3,13 @@ import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import Knap from "@/components/Knap";
 import OmOs from "@/components/OmOs";
+import KontaktOs from "@/components/KontaktOs";
 
 export default function Loading() {
   return (
     <div className="overflow-hidden">
       <Nav />
+      <KontaktOs />
 
       <section className="relative w-full">
         <img src="/img/video_desk.svg" alt="video" className="w-full h-auto" />
