@@ -10,7 +10,6 @@ export default function Loading() {
     <div className="overflow-hidden">
       <Nav />
       <KontaktOs />
-
       <section className="relative w-full">
         <img src="/img/video_desk.svg" alt="video" className="w-full h-auto" />
         <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-darkblue text-5xl font-bold">
