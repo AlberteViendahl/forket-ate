@@ -19,7 +19,7 @@ export default function Loading() {
       </section>
       <section className="bg-brown">
         <OmOs />
-        <CarrouselCard />
+        <CarrouselCard/>
       </section>
       <Footer />
     </div>
