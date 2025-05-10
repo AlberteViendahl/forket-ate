@@ -6,6 +6,7 @@ import {
   FaTwitterSquare,
 } from "react-icons/fa";
 import { createClient } from "@supabase/supabase-js";
+import Knap from "@/components/Knap";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
@@ -126,12 +127,13 @@ const Formel = () => {
             <p className="text-red-500">{errors.message.message}</p>
           )}
 
-          <button
+          {/*   <button
             type="submit"
             className="bg-orange text-white font-bold py-2 px-6 rounded hover:bg-lightblue mt-4"
           >
             Send
-          </button>
+          </button> */}
+          <Knap label="SEND" />
         </form>
       </div>
     </div>

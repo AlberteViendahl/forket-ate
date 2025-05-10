@@ -4,6 +4,7 @@ import Nav from "@/components/Nav";
 import Knap from "@/components/Knap";
 import OmOs from "@/components/OmOs";
 import KontaktOs from "@/components/KontaktOs";
+import Proces from "@/components/Proces";
 
 export default function Loading() {
   return (
@@ -28,6 +29,7 @@ export default function Loading() {
       </section>
       <section className="bg-brown">
         <OmOs />
+        <Proces />
         <CarrouselCard />
         <Knap />
       </section>

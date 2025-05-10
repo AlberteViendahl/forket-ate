@@ -9,7 +9,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       router.push("/Forside");
-    }, 1000);
+    }, 100);
 
     return () => clearTimeout(timer);
   }, [router]);
