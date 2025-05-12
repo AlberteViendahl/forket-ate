@@ -1,11 +1,13 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import LoginForm from "./LoginForm"; // 👈 husk at importere den!
 
 function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showLogin, setShowLogin] = useState(false); // 👈 login modal state
 
-  // Luk menuen ved skift til desktop
+  // Luk menu ved skift til desktop
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
@@ -60,13 +62,12 @@ function Navigation() {
           )}
         </button>
 
+        {/* Menu links */}
         <ul
-          className={`
-            fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out flex-col gap-6 p-8
+          className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out flex-col gap-6 p-8
             ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
             md:static md:flex md:flex-row md:gap-10 md:p-0 md:bg-transparent md:shadow-none md:translate-x-0
-            flex z-20
-          `}
+            flex z-20`}
         >
           <li>
             <Link
@@ -96,7 +97,18 @@ function Navigation() {
             </Link>
           </li>
         </ul>
+
+        {/* Person ikon med onClick */}
+        <img
+          onClick={() => setShowLogin(true)}
+          className="h-50 w-50 cursor-pointer"
+          src="/img/person.svg"
+          alt="person ikon"
+        />
       </nav>
+
+      {/* Login modal */}
+      {showLogin && <LoginForm onClose={() => setShowLogin(false)} />}
     </header>
   );
 }

@@ -5,12 +5,11 @@ import Knap from "@/components/Knap";
 import OmOs from "@/components/OmOs";
 import KontaktOs from "@/components/KontaktOs";
 import Proces from "@/components/Proces";
-
 export default function Loading() {
   return (
     <div className="overflow-hidden">
       <Nav />
-      <KontaktOs />
+<KontaktOs />
       <section className="relative w-full">
         <video
           src="/img/video.mp4"
