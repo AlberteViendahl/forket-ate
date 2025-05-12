@@ -24,6 +24,22 @@ body {
   background-image: url(/img/bgstreg.svg);
   background-size: cover;
   background-position: center;
-  width: auto%;
+  width: auto;
   height: auto;
 }
+
+@font-face {
+  font-family: playfair;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("/fonts/playfair.woff2") format("woff2");
+}
+
+h1{
+  font-family: "playfair";
+  font-size: 48px;}
+
+ p{
+  font-size: medium;
+ } 
