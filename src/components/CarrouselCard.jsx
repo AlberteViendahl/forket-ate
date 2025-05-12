@@ -37,7 +37,7 @@ const CarrouselCard = () => {
             className="p-5 max-w-[300px] bg-white shadow rounded"
           >
             <img src={card.img} alt={card.title} />
-            <h1 className="text-center mt-2">{card.title}</h1>
+            <h2 className="text-center mt-2">{card.title}</h2>
           </div>
         ))}
       </div>
