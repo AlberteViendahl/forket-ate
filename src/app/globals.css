@@ -24,6 +24,6 @@ body {
   background-image: url(/img/bgstreg.svg);
   background-size: cover;
   background-position: center;
-  width: auto%;
+  width: auto;
   height: auto;
 }

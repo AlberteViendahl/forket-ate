@@ -3,9 +3,9 @@ import Knap from "@/components/Knap";
 const Proces = () => {
   return (
     <section className=" bg-beige bg-image">
-      <h1 className="text-3xl text-darkblue flex justify-center py-10">
+      <h2 className="text-3xl text-brown font-extrabold flex justify-center py-10">
         Fra tanker til drømmehjem
-      </h1>
+      </h2>
       <div className="grid grid-cols-5 ">
         <div className="pl-10">
           <img src="/img/proces1.svg" alt="to der giver hånd" />

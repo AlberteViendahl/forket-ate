@@ -1,12 +1,10 @@
 "use client";
 import { useForm } from "react-hook-form";
-import {
-  FaInstagramSquare,
-  FaFacebookSquare,
-  FaTwitterSquare,
-} from "react-icons/fa";
+import { FaInstagramSquare, FaFacebookSquare } from "react-icons/fa";
 import { createClient } from "@supabase/supabase-js";
 import Knap from "@/components/Knap";
+
+import { FaLinkedin } from "react-icons/fa6";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
@@ -60,7 +58,7 @@ const Formel = () => {
           <div className="xs:flex xs:justify-center sm:justify-start gap-2">
             <FaInstagramSquare className="text-darkblue h-8 w-8" />
             <FaFacebookSquare className="text-darkblue h-8 w-8" />
-            <FaTwitterSquare className="text-darkblue h-8 w-8 mb-5" />
+            <FaLinkedin className="text-darkblue h-8 w-8" />
           </div>
         </div>
 

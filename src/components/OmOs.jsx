@@ -11,13 +11,18 @@ const OmOs = ({ imageUrl }) => {
       paddingLeft: "80px",
       paddingRight: "80px",
       borderRadius: "8px",
+
       color: "white",
     },
     imageSection: {
       flex: 1,
+      marginTop: "100px",
+      marginBottom: "100px",
     },
     textSection: {
       flex: 2,
+      marginTop: "100px",
+      marginBottom: "100px",
     },
     image: {
       maxWidth: "100%",
@@ -35,7 +40,7 @@ const OmOs = ({ imageUrl }) => {
         />
       </div>
       <div style={styles.textSection}>
-        <h2>Om mig og min service</h2>
+        <h2 className="font-extrabold text-3xl">Om mig og min service</h2>
         <br />
         <p>
           Mit navn er Martin Ankjær, og jeg driver en dansk

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
-import { FaTwitterSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -14,18 +14,18 @@ const Footer = () => {
         />
       </Link>
       <div className="md:col-start-1 pt-10 leading-[2.5rem]  ">
-        <h2>KONTAKT</h2>
-        <p>Ankjær Total Entreprise</p>
-        <p className="whitespace-pre-line">
+        <h2 className="text-brown font-semibold">KONTAKT</h2>
+        <p className="text-brown">Ankjær Total Entreprise</p>
+        <p className="whitespace-pre-line text-brown">
           Lillevangsvej 218, 3480 Fredensborg
         </p>
-        <p className="pb-10">ma@classichouse.dk</p>
+        <p className="pb-10 text-brown">ma@classichouse.dk</p>
       </div>
-      <div className="md:col-start-3 self-end md:pb-10">
+      <div className="md:col-start-3 self-end md:pb-5">
         <div className="flex justify-center ">
-          <FaInstagramSquare className="text-lilla xs:h-25 xs:w-25 lg:h-50 lg:w-50" />
-          <FaFacebookSquare className="text-lilla xs:h-25 xs:w-25 lg:h-50 lg:w-50" />
-          <FaTwitterSquare className="text-lilla xs:h-25 xs:w-25 lg:h-50 lg:w-50 mb-10" />
+          <FaInstagramSquare className="text-brown xs:h-35 xs:w-35 lg:h-50 lg:w-50" />
+          <FaFacebookSquare className="text-brown xs:h-35 xs:w-35 lg:h-50 lg:w-50" />
+          <FaLinkedin className="text-brown xs:h-35 xs:w-35 lg:h-50 lg:w-50" />
         </div>
       </div>
     </div>

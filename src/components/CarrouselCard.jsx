@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
@@ -25,9 +25,9 @@ const CarrouselCard = () => {
   };
 
   return (
-    <section className="flex items-center justify-center space-x-6 py-6">
+    <section className="flex items-center justify-center space-x-6 py-6 bg-brown">
       <button onClick={handlePrev} disabled={startIndex === 0}>
-        <IoIosArrowBack size={30} color="white"/>
+        <IoIosArrowBack size={30} color="white" />
       </button>
 
       <div className="flex justify-center gap-8">
@@ -41,12 +41,12 @@ const CarrouselCard = () => {
           </div>
         ))}
       </div>
-
       <button
+        className="bg-brown"
         onClick={handleNext}
         disabled={startIndex >= cards.length - visibleCards}
       >
-        <IoIosArrowForward size={30} color="white"/>
+        <IoIosArrowForward size={30} color="white" />
       </button>
     </section>
   );
