@@ -1,7 +1,9 @@
 const Galleri = () => {
   return (
     <section className="bg-brown p-20">
-      <h1 className="text-center text-4xl p-2 text-white">INSPIRATION</h1>
+      <h1 className="text-center text-5xl p-2 text-white font-extrabold">
+        INSPIRATION
+      </h1>
       <p className="text-white mb-4">
         Drømmer du om dit perfekte hjem? På denne sige kan du udforske
         forskellige stilarter og materialer som andre drømte om - uanset om du
@@ -18,31 +20,50 @@ const Galleri = () => {
         detaljer om de anvendte produkter og materialer.{" "}
       </p>
       <div className="grid grid-cols-6 gap-5 p-4">
-  <div className="relative col-span-4 m-0 p-0">
-    <img src="/img/1.svg" className="h-full w-full object-cover" />
+        <div className="relative col-span-4 m-0 p-0">
+          <img src="/img/1.svg" className="h-full w-full object-cover" />
 
-    <div className="absolute top-[20%] right-[29%] group">
-      <img
-        src="/img/dot.svg"
-        alt="dot"
-        className="transition-transform duration-300 transform hover:scale-110 cursor-pointer"
-      />
-      <div className="absolute left-full top-1/2 -translate-y-1/2 ml-2 w-48 p-2 bg-white text-black text-sm rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-        Vindue lavet i glas.
+          <div className="absolute top-[20%] right-[29%] group">
+            <img
+              src="/img/dot.svg"
+              alt="dot"
+              className="transition-transform duration-300 transform hover:scale-110 cursor-pointer"
+            />
+            <div className="absolute left-full top-1/2 -translate-y-1/2 ml-2 w-48 p-2 bg-white text-black text-sm rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+              Vindue lavet i glas.
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="/img/2.svg"
+          className="col-span-2 m-0 p-0 h-full object-cover rounded-12"
+        />
+        <img
+          src="/img/3.svg"
+          className="col-span-3 m-0 p-0 h-full object-cover rounded-12"
+        />
+        <img
+          src="/img/4.svg"
+          className="col-span-3 m-0 p-0 h-full object-cover rounded-12"
+        />
+        <img
+          src="/img/5.svg"
+          className="col-span-2 m-0 p-0 h-full w-full object-cover rounded-12"
+        />
+        <img
+          src="/img/8.svg"
+          className="col-span-4 row-span-2 m-0 p-0 h-full w-full object-cover rounded-12"
+        />
+        <img
+          src="/img/6.svg"
+          className="col-span-1 m-0 p-0 h-full object-cover rounded-12"
+        />
+        <img
+          src="/img/7.svg"
+          className="col-span-1 m-0 p-0 h-full object-cover rounded-12"
+        />
       </div>
-    </div>
-  </div>
-
-  <img src="/img/2.svg" className="col-span-2 m-0 p-0 h-full object-cover rounded-12" />
-  <img src="/img/3.svg" className="col-span-3 m-0 p-0 h-full object-cover rounded-12" />
-  <img src="/img/4.svg" className="col-span-3 m-0 p-0 h-full object-cover rounded-12" />
-  <img src="/img/5.svg" className="col-span-2 m-0 p-0 h-full w-full object-cover rounded-12" />
-  <img src="/img/8.svg" className="col-span-4 row-span-2 m-0 p-0 h-full w-full object-cover rounded-12" />
-  <img src="/img/6.svg" className="col-span-1 m-0 p-0 h-full object-cover rounded-12" />
-  <img src="/img/7.svg" className="col-span-1 m-0 p-0 h-full object-cover rounded-12" />
-</div>
-
-
     </section>
   );
 };

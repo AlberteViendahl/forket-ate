@@ -1,7 +1,7 @@
 const Service = () => {
   return (
     <section className="p-20">
-      <h1 className="text-darkblue font-extrabold text-center text-6xl mb-5">
+      <h1 className="text-darkblue font-extrabold text-center text-5xl mb-5">
         FØLG DIT <br /> BYGGEPROJEKT
       </h1>
 

@@ -40,7 +40,7 @@ const Formel = () => {
 
   return (
     <div className="bg-beige">
-      <h1 className="text-darkblue font-extrabold text-center text-6xl pb-10 pt-10">
+      <h1 className="text-darkblue font-extrabold text-center text-5xl pb-10 pt-10">
         BOOK ET <span className="italic">møde</span>
       </h1>
       <div className="sm:grid sm:grid-cols-3 pb-20">
