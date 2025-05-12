@@ -4,12 +4,14 @@ import Nav from "@/components/Nav";
 import Knap from "@/components/Knap";
 import OmOs from "@/components/OmOs";
 import KontaktOs from "@/components/KontaktOs";
+import LoginForm from "@/components/LoginForm";
 
 export default function Loading() {
   return (
     <div className="overflow-hidden">
       <Nav />
-      <KontaktOs />
+{/*       <LoginForm/>
+ */}      <KontaktOs />
       <section className="relative w-full">
         <video
           src="/img/video.mp4"
