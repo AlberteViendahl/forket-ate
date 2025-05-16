@@ -1,18 +1,28 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Image from "next/image";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { createClient } from "@supabase/supabase-js";
+import Link from "next/link";
 
-const cards = [
-  { id: 1, title: "Vedbæk", img: "/img/vedbaek.svg" },
-  { id: 2, title: "Vedbæk", img: "/img/vedbaek2.svg" },
-  { id: 3, title: "Fredensborg", img: "/img/fredensborg.svg" },
-  { id: 4, title: "Holte", img: "/img/holte.svg" },
-  { id: 5, title: "Rungsted", img: "/img/rungsted.svg" },
-];
+// Supabase credentials direkte her
+const supabaseUrl = "https://yoqpnnroaubeeaxnhrwh.supabase.co";
+const supabaseAnonKey =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlvcXBubnJvYXViZWVheG5ocndoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDczMTIzNjEsImV4cCI6MjA2Mjg4ODM2MX0.AdsaDvaCTv-lUhulKbFMh9uHo3jy2dPgdFw8L4M-Zho";
+
+const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 const CarrouselCard = () => {
+  const [cards, setCards] = useState([]);
   const [startIndex, setStartIndex] = useState(0);
   const visibleCards = 3;
+
+  useEffect(() => {
+    supabase
+      .from("ate")
+      .select("id, city, image")
+      .then(({ data }) => setCards(data || []));
+  }, []);
 
   const handlePrev = () => {
     setStartIndex((prev) => Math.max(prev - visibleCards, 0));
@@ -31,18 +41,23 @@ const CarrouselCard = () => {
       </button>
 
       <div className="flex justify-center gap-8">
-        {cards.slice(startIndex, startIndex + visibleCards).map((card) => (
-          <div
-            key={card.id}
-            className="p-5 max-w-[300px] bg-white shadow rounded"
-          >
-            <img src={card.img} alt={card.title} />
-            <h2 className="text-center mt-2">{card.title}</h2>
-          </div>
-        ))}
+      {cards.slice(startIndex, startIndex + visibleCards).map((card) => (
+  <Link href={`/singleview/${card.id.toString()}`} key={card.id}>
+    <div className="p-5 max-w-[300px] bg-white shadow rounded">
+      <Image
+        src={card.image}
+        alt={card.city}
+        width={300}
+        height={200}
+        className="object-cover w-full h-auto"
+      />
+      <h2 className="text-center mt-2">{card.city}</h2>
+    </div>
+  </Link>
+))}
       </div>
+
       <button
-        className="bg-brown"
         onClick={handleNext}
         disabled={startIndex >= cards.length - visibleCards}
       >
