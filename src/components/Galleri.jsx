@@ -19,8 +19,8 @@ const Galleri = () => {
         Ved at holde musen over de interaktive prikker på billederne, kan du se
         detaljer om de anvendte produkter og materialer.{" "}
       </p>
-      <div className="grid grid-cols-6 gap-5 p-4">
-        <div className="relative col-span-4 m-0 p-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-5 p-4">
+      <div className="relative col-span-4 m-0 p-0">
           <img src="/img/1.svg" className="h-full w-full object-cover" />
 
           <div className="absolute top-[20%] right-[29%] group">
@@ -49,9 +49,10 @@ const Galleri = () => {
 
 
         <img
-          src="/img/2.svg"
-          className="col-span-2 m-0 p-0 h-full object-cover rounded-12"
-        />
+  src="/img/2.svg"
+  className="col-span-1 sm:col-span-1 md:col-span-2 m-0 p-0 h-full object-cover rounded-12"
+/>
+
 
 
         <img
