@@ -36,19 +36,32 @@ body {
   src: url("/fonts/playfair.woff2") format("woff2");
 }
 
-h1{
+h1 {
   font-family: "playfair";
-  font-size: 48px;}
-  
+  font-size: 48px;
+}
 
-  h2{
-    font-family: "playfair";
-  }
+h2 {
+  font-family: "playfair";
+}
 
- p{
+p {
   font-size: medium;
- } 
+}
 
- li{
+li {
   font-family: "playfair";
- }
+}
+
+@keyframes grow {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+.animate-grow {
+  animation: grow 5s ease-in-out forwards;
+}
