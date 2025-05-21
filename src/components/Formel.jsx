@@ -61,9 +61,7 @@ const Formel = () => {
             <FaLinkedin className="text-darkblue h-8 w-8" />
           </div>
         </div>
-
         <hr className="pb-10 mt-5 sm:hidden" />
-
         <form
           onSubmit={handleSubmit(onSubmit)}
           className=" xs:w-300 sm:w-500 mx-auto sm:col-span-2"
