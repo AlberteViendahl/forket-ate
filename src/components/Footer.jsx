@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div className="bg-lightblue text-center mx-auto grid grid-cols-1 md:grid-cols-3">
-      <Link href="/" className="md:col-start-2 md:row-start-1">
+      <Link href="/Forside" className="md:col-start-2 md:row-start-1">
         <img
           src="/img/logo.svg"
           alt="logo ikon"
