@@ -39,11 +39,11 @@ const Formel = () => {
   };
 
   return (
-    <div className="bg-beige">
+    <div className="bg-beige bg-image pb-20 px-20 ">
       <h1 className="text-darkblue font-extrabold text-center text-5xl pb-10 pt-10">
         BOOK ET <span className="italic">møde</span>
       </h1>
-      <div className="sm:grid sm:grid-cols-3 pb-20">
+      <div className="sm:grid sm:grid-cols-3 bg-white rounded-15 shadow pt-10">
         <div className="xs:text-center sm:ml-auto sm:text-left sm:col-span-1">
           <p className="font-extrabold">EMAIL</p>
           <p className="pb-7">ma@classichouse.dk</p>
@@ -62,16 +62,16 @@ const Formel = () => {
           </div>
         </div>
 
-        <hr className="pb-10 sm:hidden" />
+        <hr className="pb-10 mt-5 sm:hidden" />
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="xs:w-300 sm:w-500 mx-auto sm:col-span-2"
+          className=" xs:w-300 sm:w-500 mx-auto sm:col-span-2"
         >
           <input
             {...register("firstname", { required: "Fornavn er påkrævet" })}
             placeholder="Fornavn"
-            className="bg-beige mb-2 rounded-12 w-300 h-40 sm:w-500 border-[1px] border-black p-5"
+            className="bg-beige mb-2 rounded-12 w-300 h-40 sm:w-500 border-[1px] border-black p-5 "
           />
           {errors.firstname && (
             <p className="text-red-500">{errors.firstname.message}</p>

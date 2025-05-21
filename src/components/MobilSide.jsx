@@ -5,7 +5,7 @@ const MobilSide = () => {
     <div className="bg-beige flex justify-center px-4 py-10">
       <div className="flex flex-col items-center text-center max-w-sm">
         <h2 className="mb-7 text-2xl font-semibold">
-          Velkommen, Camilla & Micheal
+          Velkommen, Camilla & Michael
         </h2>
         <p className="mb-4">
           Her kan du se, hvor langt dit hus er i byggeprocessen.

@@ -5,7 +5,7 @@ import LoginForm from "./LoginForm";
 
 function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [showLogin, setShowLogin] = useState(false); 
+  const [showLogin, setShowLogin] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -24,7 +24,7 @@ function Navigation() {
     <header className="relative">
       <nav className="flex justify-between items-center p-4 bg-lightblue text-brown">
         {/* Logo */}
-        <Link href="/">
+        <Link href="/Forside">
           <img src="/img/logo.svg" alt="logo ikon" />
         </Link>
 
@@ -63,7 +63,7 @@ function Navigation() {
 
         {/* Menu links */}
         <ul
-          className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out flex-col gap-6 p-8
+          className={`fixed top-0 right-0 h-full w-80 bg-white shadow-lg transform transition-transform duration-300 ease-in-out flex-col gap-6 p-8
             ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
             md:static md:flex md:flex-row md:gap-10 md:p-0 md:bg-transparent md:shadow-none md:translate-x-0
             flex z-20`}
@@ -97,16 +97,16 @@ function Navigation() {
           </li>
         </ul>
 
-  {/*       <img
+        {/*       <img
           onClick={() => setShowLogin(true)}
           className="h-50 w-50 cursor-pointer"
           src="/img/person.svg"
           alt="person ikon"
         /> */}
       </nav>
-
-{/*       {showLogin && <LoginForm onClose={() => setShowLogin(false)} />}
- */}    </header>
+      {/*       {showLogin && <LoginForm onClose={() => setShowLogin(false)} />}
+       */}{" "}
+    </header>
   );
 }
 

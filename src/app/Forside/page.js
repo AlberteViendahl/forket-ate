@@ -1,7 +1,6 @@
 import CarrouselCard from "@/components/CarrouselCard";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
-import Knap from "@/components/Knap";
 import OmOs from "@/components/OmOs";
 import KontaktOs from "@/components/KontaktOs";
 import Proces from "@/components/Proces";
@@ -21,14 +20,17 @@ export default function Loading() {
         />
         <h1
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white
- text-7xl font-bold text-nowrap"
+ lg:text-7xl xs:text-3xl  md:text-6xl font-bold text-nowrap"
         >
-          ANKJÆR TOTAL ENTREPRISE
+          ANKJÆR TOTALENTREPRISE
         </h1>
+        <p className="absolute md:top-2/3 xs:top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white xs:text-l md:text-2xl xs:text-nowrap">
+          Vi tegner og bygger dit drømmehus fra bunden
+        </p>
       </section>
       <section>
-        <OmOs />
         <Proces />
+        <OmOs />
         <CarrouselCard />
       </section>
       <Footer />
