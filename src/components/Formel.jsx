@@ -62,8 +62,6 @@ const Formel = () => {
           </div>
         </div>
 
-        <hr className="pb-10 sm:hidden" />
-
         <hr className="pb-10 mt-5 sm:hidden" />
 
         <form
