@@ -24,7 +24,7 @@ function Navigation() {
     <header className="relative">
       <nav className="flex justify-between items-center p-4 bg-lightblue text-brown">
         {/* Logo */}
-        <Link href="/">
+        <Link href="/Forside">
           <img src="/img/logo.svg" alt="logo ikon" />
         </Link>
 

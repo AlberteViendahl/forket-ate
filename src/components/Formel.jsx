@@ -39,11 +39,11 @@ const Formel = () => {
   };
 
   return (
-    <div className="bg-beige">
+    <div className="bg-beige text-darkblue">
       <h1 className="text-darkblue font-extrabold text-center text-5xl pb-10 pt-10">
         BOOK ET <span className="italic">møde</span>
       </h1>
-      <div className="sm:grid sm:grid-cols-3 pb-20">
+      <div className="sm:grid sm:grid-cols-3 pb-20 animate-fade-in-up">
         <div className="xs:text-center sm:ml-auto sm:text-left sm:col-span-1">
           <p className="font-extrabold">EMAIL</p>
           <p className="pb-7">ma@classichouse.dk</p>
@@ -61,13 +61,12 @@ const Formel = () => {
             <FaLinkedin className="text-darkblue h-8 w-8" />
           </div>
         </div>
-
         <hr className="pb-10 sm:hidden" />
 
         <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="xs:w-300 sm:w-500 mx-auto sm:col-span-2"
-        >
+  onSubmit={handleSubmit(onSubmit)}
+  className="xs:w-300 sm:w-500 mx-auto sm:col-span-2"
+>
           <input
             {...register("firstname", { required: "Fornavn er påkrævet" })}
             placeholder="Fornavn"
