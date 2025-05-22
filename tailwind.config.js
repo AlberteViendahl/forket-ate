@@ -45,6 +45,7 @@ module.exports = {
         150: "150px",
         200: "200px",
         300: "300px",
+        320: "300px",
         350: "350px",
         400: "400px",
         450: "450px",
@@ -75,6 +76,7 @@ module.exports = {
       borderRadius: {
         12: "12px",
         15: "15px",
+        100: "100%",
       },
       screens: {
         xs: "400px",
@@ -85,20 +87,20 @@ module.exports = {
       },
 
       keyframes: {
-        'fade-in-up': {
-          '10%': {
-            opacity: '0',
-            transform: 'translateY(20px)',
+        "fade-in-up": {
+          "10%": {
+            opacity: "0",
+            transform: "translateY(20px)",
           },
-          '100%': {
-            opacity: '1',
-            transform: 'translateY(0)',
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
           },
         },
       },
       animation: {
-        'fade-in-up': 'fade-in-up 1s ease-out forwards',
+        "fade-in-up": "fade-in-up 1s ease-out forwards",
       },
     },
   },
-}
+};
