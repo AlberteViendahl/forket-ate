@@ -5,6 +5,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { createClient } from "@supabase/supabase-js";
 import mockReviews from "@/data/mockReviews";
+import KontaktOs from "@/components/KontaktOs";
 
 const supabase = createClient(
   "https://yoqpnnroaubeeaxnhrwh.supabase.co",
@@ -89,7 +90,7 @@ export default function SingleviewPage() {
           ))}
         </div>
       </section>
-
+<KontaktOs/>
       <Footer />
     </div>
   );

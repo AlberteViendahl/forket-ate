@@ -1,6 +1,6 @@
 const Service = () => {
   return (
-    <section className="p-20">
+    <section className="m-20 p-5 rounded-12 bg-white">
       <h1 className="text-darkblue font-extrabold text-center text-5xl mb-5">
         FØLG DIT <br /> BYGGEPROJEKT
       </h1>
@@ -9,7 +9,7 @@ const Service = () => {
         <img
           src="/img/appmobil2.svg"
           alt="app mobil"
-          className=" h-[80%] ml-10 mt-10 "
+          className=" h-[80%] ml-10 mt-10 border border-beige shadow rounded-15 "
         />
         <div>
           <p className="text-lg mt-10 w-500 ">
