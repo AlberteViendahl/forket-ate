@@ -4,6 +4,8 @@ import Nav from "@/components/Nav";
 import OmOs from "@/components/OmOs";
 import KontaktOs from "@/components/KontaktOs";
 import Proces from "@/components/Proces";
+import Pil from "@/components/Pil";
+
 export default function Loading() {
   return (
     <div className="overflow-hidden">
@@ -12,7 +14,7 @@ export default function Loading() {
       <section className="relative w-full">
         <video
           src="/img/video.mp4"
-          className="w-full h-auto"
+          className="w-full h-auto z-0"
           autoPlay
           muted
           loop
@@ -27,7 +29,8 @@ export default function Loading() {
         <p className="absolute md:top-2/3 xs:top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white xs:text-l md:text-2xl xs:text-nowrap">
           Vi tegner og bygger dit drømmehus fra bunden
         </p>
-      </section>
+        <Pil className="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10" />
+        </section>
       <section>
         <Proces />
         <OmOs />
