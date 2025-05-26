@@ -4,11 +4,8 @@ import Nav from "@/components/Nav";
 import OmOs from "@/components/OmOs";
 import KontaktOs from "@/components/KontaktOs";
 import Proces from "@/components/Proces";
-<<<<<<< HEAD
 import Pil from "@/components/Pil";
-=======
 import Head from "next/head";
->>>>>>> logo-og-seo
 
 export default function Loading() {
   return (
@@ -44,7 +41,7 @@ export default function Loading() {
           Vi tegner og bygger dit drømmehus fra bunden
         </p>
         <Pil className="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10" />
-        </section>
+      </section>
       <section>
         <Proces />
         <OmOs />
