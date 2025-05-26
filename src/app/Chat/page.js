@@ -1,9 +1,9 @@
-import Nav from "@/components/Nav";
+import AppNav from "@/components/AppNav";
 import Samtale from "@/components/Samtale";
 export default function Chat() {
   return (
     <div>
-      <Nav />
+      <AppNav />
       <Samtale />
     </div>
   );

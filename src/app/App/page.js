@@ -1,11 +1,11 @@
-import Nav from "@/components/Nav";
+import AppNav from "@/components/AppNav";
 import MobilSide from "@/components/MobilSide";
 import FooterApp from "@/components/FooterApp";
 
 export default function App() {
   return (
     <div>
-      <Nav />
+      <AppNav />
       <MobilSide />
       <FooterApp />
     </div>

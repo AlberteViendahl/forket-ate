@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import LoginForm from "./LoginForm";
 
 function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -105,16 +104,7 @@ function Navigation() {
             </Link>
           </li>
         </ul>
-
-        {/*       <img
-          onClick={() => setShowLogin(true)}
-          className="h-50 w-50 cursor-pointer"
-          src="/img/person.svg"
-          alt="person ikon"
-        /> */}
       </nav>
-      {/*       {showLogin && <LoginForm onClose={() => setShowLogin(false)} />}
-       */}{" "}
     </header>
   );
 }
