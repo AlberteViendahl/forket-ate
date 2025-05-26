@@ -1,4 +1,6 @@
 import Knap from "@/components/Knap";
+import Link from "next/link";
+
 
 const Proces = () => {
   return (
@@ -68,8 +70,9 @@ const Proces = () => {
           <p className="text-center text-brown font-bold">6. Dit drømmehjem</p>
         </div>
       </div>
-
+      <Link href="/Info">
       <Knap label="Vil du vide mere?" />
+      </Link>
     </section>
   );
 };

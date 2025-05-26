@@ -68,6 +68,15 @@ function Navigation() {
             md:static md:flex md:flex-row md:gap-10 md:p-0 md:bg-transparent md:shadow-none md:translate-x-0
             flex z-20`}
         >
+                    <li>
+            <Link
+              href="/Info"
+              onClick={() => setIsMenuOpen(false)}
+              className="hover:underline"
+            >
+              Info
+            </Link>
+          </li>
           <li>
             <Link
               href="/Kontakt"

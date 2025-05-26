@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Service = () => {
   return (
     <section className="m-20 p-5 rounded-12 bg-white">
@@ -9,7 +11,7 @@ const Service = () => {
         <img
           src="/img/appmobil2.svg"
           alt="app mobil"
-          className=" h-[80%] ml-10 mt-10 border border-beige shadow rounded-15 "
+          className=" h-[80%] ml-10 mt-10 "
         />
         <div>
           <p className="text-lg mt-10 w-500 ">
@@ -23,10 +25,12 @@ const Service = () => {
             byggeprocessen, så du altid er informeret om, hvordan dit drømmehus
             tager form.
           </p>
+          <Link href="/App">
           <div className="mt-10">
             <img src="/img/applogo.svg" alt="logo app" className="h-[20%]" />
             <img src="/img/appstore.svg" alt="appstore" className="h-12" />
           </div>
+          </Link>
         </div>
       </div>
     </section>
