@@ -17,21 +17,21 @@ const Proces = () => {
             1. Uforpligtende snak <br></br>om dit drømmehjem
           </p>
         </div>
-        <img className="hidden md:block" src="/img/pil.svg" alt="pil" />
+        <img className="hidden md:block" src="/img/pil.svg" alt="en brun pil" />
         <div>
           <img
             className="md:h-200 md:w-200 xs:h-150 xs:w-150"
             src="/img/proces2.svg"
-            alt=""
+            alt="Bygge aftale"
           />
           <p className=" text-center text-brown font-bold">2. Bygge aftale</p>
         </div>
-        <img className="hidden md:block" src="/img/pil.svg" alt="pil" />
+        <img className="hidden md:block" src="/img/pil.svg" alt="en brun pil" />
         <div>
           <img
             className="md:h-200 md:w-200 xs:h-150 xs:w-150"
             src="/img/proces3.svg"
-            alt=""
+            alt="Artitektplan"
           />
           <p className="text-center text-brown font-bold">3. Artitektplan</p>
         </div>
@@ -42,28 +42,28 @@ const Proces = () => {
           <img
             className="md:h-200 md:w-200 xs:h-150 xs:w-150"
             src="/img/proces4.svg"
-            alt="to der giver hånd"
+            alt="værktøj"
           />
           <p className="text-center text-brown font-bold">
             4. Fundament & Materialer
           </p>
         </div>
-        <img className="hidden md:block" src="/img/pil.svg" alt="pil" />
+        <img className="hidden md:block" src="/img/pil.svg" alt="en brun pil" />
         <div className="">
           <img
             className="md:h-200 md:w-200 xs:h-150 xs:w-150"
             src="/img/proces5.svg"
-            alt=""
+            alt="en telefon"
           />
           <p className="text-center text-brown font-bold">5. Statusoversigt</p>
         </div>
 
-        <img className="hidden md:block" src="/img/pil.svg" alt="pil" />
+        <img className="hidden md:block" src="/img/pil.svg" alt="en brun pil" />
         <div>
           <img
             className="md:h-200 md:w-200 xs:h-150 xs:w-150"
             src="/img/proces6.svg"
-            alt=""
+            alt="et hus"
           />
           <p className="text-center text-brown font-bold">6. Dit drømmehjem</p>
         </div>
