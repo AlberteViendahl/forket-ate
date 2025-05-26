@@ -4,9 +4,21 @@ import Nav from "@/components/Nav";
 import OmOs from "@/components/OmOs";
 import KontaktOs from "@/components/KontaktOs";
 import Proces from "@/components/Proces";
+import Head from "next/head";
+
 export default function Loading() {
   return (
     <div className="overflow-hidden">
+      <Head>
+        <title>
+          Ankjær Totalentreprise | Dit arkitekttegnede hjem fra idé til
+          virkelighed
+        </title>
+        <meta
+          name="description"
+          content="Vi tegner og bygger dit arkitekttegnede drømmehus fra bunden – præcist som du ønsker det. Kontakt os i dag!"
+        />
+      </Head>
       <Nav />
       <KontaktOs />
       <section className="relative w-full">

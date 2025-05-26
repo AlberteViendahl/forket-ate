@@ -25,7 +25,7 @@ function Navigation() {
       <nav className="flex justify-between items-center p-4 bg-lightblue text-brown">
         {/* Logo */}
         <Link href="/Forside">
-          <img src="/img/logo.svg" alt="logo ikon" />
+          <img className="h-75" src="/img/logo.svg" alt="logo ikon" />
         </Link>
 
         {/* Burger/kryds ikon – kun mobil */}

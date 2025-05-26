@@ -96,12 +96,6 @@ const FormelKontaktOs = () => {
           <p className="text-red-500">{errors.message.message}</p>
         )}
 
-        {/* <button
-          type="submit"
-          className="bg-orange text-white font-bold py-2 px-6 rounded hover:bg-lightblue mt-4"
-        >
-          Send
-        </button> */}
         <Knap label="SEND" />
       </form>
     </div>
