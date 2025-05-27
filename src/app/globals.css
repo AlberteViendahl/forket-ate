@@ -41,8 +41,9 @@ h1 {
   font-size: 48px;
 }
 
-h2 {
+h2, h3 {
   font-family: "playfair";
+  font-size: 22px;
 }
 
 p {
