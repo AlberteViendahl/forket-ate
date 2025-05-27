@@ -61,7 +61,7 @@ export default function SingleviewPage() {
       </section>
 
       {/* Billede + tekst sektion */}
-      <section className="flex flex-col md:flex-row justify-evenly items-center gap-5 p-4 sm:p-6 m-4 sm:m-5 bg-white text-darkblue rounded-12 shadow">
+      <section className="flex flex-col md:flex-row justify-evenly items-center w-[95%] gap-5 p-4 sm:p-6  sm:m-5 bg-white text-brown  rounded-12 shadow">
         <img
           src={data.image}
           alt={data.city}
@@ -74,7 +74,7 @@ export default function SingleviewPage() {
         </div>
       </section>
 
-      <section className="p-4 sm:p-6 bg-lightgray text-darkblue">
+      <section className="p-4 sm:p-6 bg-lightgray text-brown w-[98%]">
         <h2 className="text-xl sm:text-2xl font-semibold mb-4">
           Kundeanmeldelser ({mockReviews.reviews.length})
         </h2>
@@ -90,7 +90,7 @@ export default function SingleviewPage() {
           ))}
         </div>
       </section>
-<KontaktOs/>
+      <KontaktOs />
       <Footer />
     </div>
   );
