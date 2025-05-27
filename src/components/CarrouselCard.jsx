@@ -50,13 +50,14 @@ const CarrouselCard = () => {
   return (
     <section className="flex flex-col items-center py-20 bg-brown w-full">
       <h2 className="text-center pb-10 text-white text-3xl font-bold">
-        Hvad drømte andre om?
+      Se hvordan andres nybyg blev til drømmehus
       </h2>
       <div className="flex items-center justify-center w-full gap-4 px-4">
         <button
           onClick={handlePrev}
           disabled={startIndex === 0}
           className="text-white disabled:opacity-30"
+          aria-label="pil til siden"
         >
           <IoIosArrowBack size={30} />
         </button>
@@ -84,6 +85,7 @@ const CarrouselCard = () => {
           onClick={handleNext}
           disabled={startIndex >= cards.length - visibleCards}
           className="text-white disabled:opacity-30"
+          aria-label="pil til siden"
         >
           <IoIosArrowForward size={30} />
         </button>
