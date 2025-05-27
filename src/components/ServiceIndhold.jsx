@@ -8,11 +8,15 @@ const Service = () => {
       </h1>
 
       <div className=" grid md:grid-cols-2 xs:grid-cols-1">
-        <img
-          src="/img/appmobil2.svg"
-          alt="app mobil"
-          className=" h-[80%] ml-10 mt-10 "
-        />
+      <img
+  src="/img/appmobil2.svg"
+  alt="app mobil"
+  className="mx-auto mt-10 
+             xs:max-w-[200px] xs:max-h-[300px] 
+             md:max-w-[400px] md:max-h-[500px]"
+/>
+
+
         <div>
           <h2 className="font-bold xs:text-xl text-center text-brown mt-10">
             Følg med hele vejen – fra første spadestik til nøgleoverdragelse
