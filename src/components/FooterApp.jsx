@@ -2,7 +2,7 @@
 import Link from "next/link";
 const FooterApp = () => {
   return (
-    <div className="bg-white text-center mx-auto grid grid-cols-1 ">
+    <div className=" text-center mx-auto grid grid-cols-1 bg-lightblue ">
       <Link href="/Chat">
         <img
           src="/img/love_mail.svg"
