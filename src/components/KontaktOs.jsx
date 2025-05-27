@@ -10,7 +10,7 @@ const KontaktOs = () => {
     <div>
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed right-4 top-1/3 bg-orange text-white px-4 py-2 rounded-[15px] hover:bg-lightblue z-50 rotate-90 translate-x-1/2"
+        className="fixed right-4 top-1/3 bg-white border-2 border-brown hover:border-darkblue text-brown px-4 py-2 rounded-[15px] hover:bg-lightblue hover:text-darkblue z-50 rotate-90 translate-x-1/2"
       >
         Kontakt mig
       </button>

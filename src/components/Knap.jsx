@@ -22,9 +22,9 @@ const BookButton = ({ label }) => {
       transition: "all 0.3s ease",
     },
     hover: {
-      backgroundColor: "#67362D",
-      color: "#DBA581",
-      border: "1px solid #DBA581",
+      backgroundColor: "#B7CBD4",
+      color: "#35465F",
+      border: "1px solid #35465F",
     },
   };
 
