@@ -23,9 +23,13 @@ const Galleri = () => {
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-5 p-4">
         <div className="relative col-span-4 m-0 p-0">
-          <div className="relative w-full h-[300px]">
-            <img src="/img/1.svg" className="w-full h-full object-cover" />
-          </div>
+          <img
+            src="/img/1.svg"
+            className="w-full h-full object-cover"
+            loading="eager"
+            decoding="async"
+            alt="Hero"
+          />
 
           <div className="absolute top-[20%] right-[29%] group">
             <img
