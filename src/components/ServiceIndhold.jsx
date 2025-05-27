@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Service = () => {
   return (
-    <section className="m-20 p-5 rounded-12 bg-white">
+    <section className="m-20 rounded-12 bg-white">
       <h1 className="text-darkblue font-extrabold text-center text-5xl mb-5">
         FØLG DIT <br /> BYGGEPROJEKT
       </h1>
@@ -14,20 +14,17 @@ const Service = () => {
           className=" h-[80%] ml-10 mt-10 "
         />
         <div>
-          <p className="text-lg mt-10 w-500 ">
-            I appen kan du se, hvor i processen huset er – og du kan direkte
-            skrive til din kontaktperson og se billeder.<br></br>​ <br></br>
-            Download appen i dag og vær en aktiv del af rejsen mod dit nye
-            hjem.​ Med vores app kan du nemt følge med i opførelsen af dit nye
-            hjem, uanset hvor du er.​ <br />
+          <h2 className="font-bold mt-10">Følg med hele vejen – fra første spadestik til nøgleoverdragelse</h2>
+          <p className="text-lg mt-5 w-[440px]">
+          Med vores app får du som kunde dit eget login, hvor du nemt kan følge med i byggeprocessen af dit nye hjem – trin for trin. Du får adgang til en personlig side, hvor du kan se opdateringer, milepæle og billeder fra byggepladsen, så du altid ved, hvor langt byggeriet er.<br></br>​ <br></br>
+          Du kan også kommunikere direkte med din kontaktperson, Martin, via den indbyggede chatfunktion. Har du spørgsmål, ønsker eller behov for afklaring, er hjælpen kun et klik væk.<br />
             <br />
-            Appen giver dig adgang til opdateringer, billeder og milepæle i
-            byggeprocessen, så du altid er informeret om, hvordan dit drømmehus
-            tager form.
+            Download appen i dag og vær en aktiv del af rejsen mod dit drømmehjem.
+Uanset hvor du er, giver appen dig tryghed, overblik og fuld gennemsigtighed i processen.
           </p>
           <Link href="/App">
-          <div className="mt-10">
-            <img src="/img/applogo.svg" alt="logo app" className="h-[20%]" />
+          <div className="mt-10 flex">
+            <img src="/img/GoogleP.png" alt="logo google play" className="h-12 object-cover w-[190px] m-0" />
             <img src="/img/appstore.svg" alt="appstore" className="h-12" />
           </div>
           </Link>

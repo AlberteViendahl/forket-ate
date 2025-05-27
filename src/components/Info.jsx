@@ -72,6 +72,8 @@ const Info = () => {
         alt="vedbæk hus"
         className="h-[200px] w-[300px] rounded-12"
       />
+      <h4 className="font-bold">Bæredygtighed og miljø – en integreret del af byggeriet</h4>
+      <p>Hos Ankjær Totalentreprise bliver alle byggerier udført i overensstemmelse med gældende miljøkrav og bæredygtige standarder. Det betyder, at du som kunde ikke behøver at tage stilling til tekniske detaljer om energirammer, materialevalg eller lovgivning – det er en naturlig del af Martins arbejde. Kvalitet og ansvarlighed går hånd i hånd i alle projekter.</p>
     </div>
   );
 };
