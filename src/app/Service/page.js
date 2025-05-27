@@ -5,7 +5,7 @@ import ServiceIndhold from "@/components/ServiceIndhold";
 
 export default function Service() {
   return (
-    <div className="overflow-hidden bg-image">
+    <div className="overflow-hidden bg-beige bg-image">
       <Nav />
       <KontaktOs />
       <ServiceIndhold />
