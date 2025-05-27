@@ -22,21 +22,20 @@ function NavigationApp() {
 
   return (
     <header className="relative">
-      <nav className="flex justify-between items-center p-4 bg-lightblue text-brown">
+      <nav className="flex justify-between items-center p-4 bg-lightblue text-darkblue">
         {/* Logo */}
         <Link href="/Forside">
           <img className="h-75" src="/img/logo.svg" alt="logo ikon" />
         </Link>
 
-              <img
+        <img
           onClick={() => setShowLogin(true)}
           className="h-50 w-50 cursor-pointer"
           src="/img/person.svg"
           alt="person ikon"
         />
       </nav>
-            {showLogin && <LoginForm onClose={() => setShowLogin(false)} />}
-      {" "}
+      {showLogin && <LoginForm onClose={() => setShowLogin(false)} />}{" "}
     </header>
   );
 }
