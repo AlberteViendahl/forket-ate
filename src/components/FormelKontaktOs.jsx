@@ -23,6 +23,7 @@ const FormelKontaktOs = () => {
         telefon: data.phone,
         email: data.email,
         besked: data.message,
+        dato: new Date().toISOString(),
       },
     ]);
 
