@@ -23,7 +23,7 @@ const Galleri = () => {
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-5 p-4">
         <div className="relative col-span-4 m-0 p-0">
-          <img src="/img/1.svg" className="h-full w-full object-cover" />
+          <img src="/img/1.svg" className="h-auto w-100%" />
 
           <div className="absolute top-[20%] right-[29%] group">
             <img
@@ -69,7 +69,7 @@ const Galleri = () => {
             <div className="absolute left-full top-1/2 -translate-y-1/2 ml-2 w-48 p-2 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto">
               <h2 className="text-m">Etagedæk mod garage.</h2>
               <p className="text-[12px]">
-              Betondæk med gulvvarmeslanger og isoleringslag..
+                Betondæk med gulvvarmeslanger og isoleringslag..
               </p>
             </div>
           </div>
@@ -89,7 +89,7 @@ const Galleri = () => {
             <div className="absolute z-50 left-full top-1/2 -translate-y-1/2 ml-2 w-48 p-2 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto">
               <h2 className="text-m">Ventilation og varmesystem.</h2>
               <p className="text-[12px]">
-              Mekanisk ventilation og luft-til-vand varmepumpe info.
+                Mekanisk ventilation og luft-til-vand varmepumpe info.
               </p>
             </div>
           </div>
@@ -109,14 +109,14 @@ const Galleri = () => {
             <div className="absolute z-50 left-full top-1/2 -translate-y-1/2 ml-2 w-48 p-2 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto">
               <h2 className="text-m">Indervægge i porebeton.</h2>
               <p className="text-[12px]">
-              100 mm og 125 mm porebeton indvendige vægge med tykkelser.
+                100 mm og 125 mm porebeton indvendige vægge med tykkelser.
               </p>
             </div>
           </div>
         </div>
 
         <div className="relative z-30 col-span-3 sm:col-span-1 md:col-span-3 m-0 p-0">
-        <img
+          <img
             src="/img/5.svg"
             className="h-full w-full object-cover rounded-12 z-10"
           />
@@ -126,18 +126,15 @@ const Galleri = () => {
               alt="dot"
               className="transition-transform duration-300 transform hover:scale-110 cursor-pointer"
             />
-<div className="absolute z-50 left-full top-1/2 -translate-y-1/2 ml-2 w-48 p-2 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto">
-<h2 className="text-m">Gulv- og loftoverflader.</h2>
-              <p className="text-[12px]">
-              Gipslofter, akustikfelter
-              </p>
+            <div className="absolute z-50 left-full top-1/2 -translate-y-1/2 ml-2 w-48 p-2 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto">
+              <h2 className="text-m">Gulv- og loftoverflader.</h2>
+              <p className="text-[12px]">Gipslofter, akustikfelter</p>
             </div>
           </div>
         </div>
 
-
         <div className="relative z-10 col-span-3 row-span-2 m-0 p-0">
-        <img
+          <img
             src="/img/8.svg"
             className="m-0 p-0 h-full w-full object-cover rounded-12 z-0"
           />
@@ -150,11 +147,11 @@ const Galleri = () => {
             <div className="absolute z-50 left-full top-1/2 -translate-y-1/2 ml-2 w-48 p-2 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto">
               <h2 className="text-m">Tagterrasse opbygning.</h2>
               <p className="text-[12px]">
-              Insitustøbt tagterrasse med tagpap, isolering og overflade.
+                Insitustøbt tagterrasse med tagpap, isolering og overflade.
               </p>
             </div>
           </div>
-           <div className="absolute top-[50%] left-[15%] group">
+          <div className="absolute top-[50%] left-[15%] group">
             <img
               src="/img/dot.svg"
               alt="dot"
@@ -163,17 +160,14 @@ const Galleri = () => {
             <div className="absolute z-50 left-full top-1/2 -translate-y-1/2 ml-2 w-48 p-2 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto">
               <h2 className="text-m">Ydervæg mod garage</h2>
               <p className="text-[12px]">
-              Speciel opbygning for garagevæg med mineraluld og porebeton.
+                Speciel opbygning for garagevæg med mineraluld og porebeton.
               </p>
             </div>
           </div>
         </div>
 
         <div className="relative col-span-2 sm:col-span-1 md:col-span-2  m-0 p-0">
-          <img
-            src="/img/6.svg"
-            className="h-full object-cover rounded-12"
-          />
+          <img src="/img/6.svg" className="h-full object-cover rounded-12" />
           <div className="absolute top-[40%] right-[35%] group">
             <img
               src="/img/dot.svg"
@@ -183,17 +177,14 @@ const Galleri = () => {
             <div className="absolute z-50 left-full top-1/2 -translate-y-1/2 ml-2 w-48 p-2 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto overflow-visible">
               <h2 className="text-m z-10">Letvægge med gipsplader.</h2>
               <p className="text-[12px] z-10">
-              Opbygning med fibergipsplader, skeletopbygning med mineraluld.
+                Opbygning med fibergipsplader, skeletopbygning med mineraluld.
               </p>
             </div>
           </div>
         </div>
 
         <div className="relative col-span-1 sm:col-span-1 m-0 p-0">
-          <img
-            src="/img/7.svg"
-            className="h-full object-cover rounded-12"
-          />
+          <img src="/img/7.svg" className="h-full object-cover rounded-12" />
           <div className="absolute top-[65%] right-[29%] group">
             <img
               src="/img/dot.svg"
@@ -203,7 +194,7 @@ const Galleri = () => {
             <div className="absolute z-50 left-full top-1/2 -translate-y-1/2 ml-2 w-48 p-2 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto">
               <h2 className="text-m">Energiklasse og tæthed.</h2>
               <p className="text-[12px]">
-              BR18 standard, tæthedskrav og energiramme.
+                BR18 standard, tæthedskrav og energiramme.
               </p>
             </div>
           </div>
