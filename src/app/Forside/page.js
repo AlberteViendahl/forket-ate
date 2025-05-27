@@ -41,12 +41,12 @@ export default function Loading() {
           playsInline
         />
         <h1
-          className="absolute md:top-1/2 xs:top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white
+          className="absolute md:top-1/2 xs:top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white
  lg:text-7xl xs:text-2xl  md:text-6xl font-bold text-nowrap"
         >
           ANKJÆR TOTALENTREPRISE
         </h1>
-        <p className="absolute md:top-2/3 xs:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white xs:text-l md:text-2xl xs:text-nowrap">
+        <p className="absolute md:top-2/3 xs:top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white xs:text-l md:text-2xl xs:text-nowrap">
           Vi tegner og bygger dit drømmehus fra bunden
         </p>
         <Pil className="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10" />

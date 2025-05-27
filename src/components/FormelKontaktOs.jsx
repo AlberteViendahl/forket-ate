@@ -37,7 +37,7 @@ const FormelKontaktOs = () => {
   };
   return (
     <div className="bg-lightblue">
-      <h1 className="text-darkblue font-extrabold text-center text-6xl pb-10 pt-10 ">
+      <h1 className="text-darkblue font-extrabold text-center xs:text-3xl md:text-6xl pb-10 pt-10 ">
         BOOK ET MØDE
       </h1>
       <form

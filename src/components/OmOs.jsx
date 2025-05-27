@@ -10,7 +10,7 @@ const OmOs = () => {
 
       <div className="flex flex-col items-center sm:items-start px-4 sm:px-12 py-6">
         <h2
-          className="font-extrabold md:text-3xl xs:text-xl text-white text-center sm:text-left py-5 "
+          className="font-extrabold md:text-3xl xs:text-2xl text-white text-center sm:text-left py-5 "
           id="OmOs"
         >
           Om mig og min service

@@ -71,7 +71,7 @@ const CarrouselCard = () => {
 
   return (
     <section className="flex flex-col items-center py-20 bg-brown w-full">
-      <h2 className="text-center pb-10 text-white md:text-3xl xs:text-xl font-bold">
+      <h2 className="text-center pb-10 text-white md:text-3xl xs:text-2xl font-bold">
         Se hvordan andres nybyg blev til drømmehus
       </h2>
 
