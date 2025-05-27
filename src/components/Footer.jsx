@@ -22,30 +22,32 @@ const Footer = () => {
         <p className="pb-10 text-darkblue">ma@classichouse.dk</p>
       </div>
       <div className="md:col-start-3 flex justify-center">
-        <div className="flex justify-center flex-col">
-          <a
-            href="https://www.instagram.com/martinankjaer/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagramSquare className="text-darkblue xs:h-35 xs:w-35 lg:h-50 lg:w-50" />
-          </a>
-          <a
-            href="https://www.facebook.com/profile.php?id=1513713345"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaFacebookSquare className="text-darkblue xs:h-35 xs:w-35 lg:h-50 lg:w-50" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/martin-ankj%C3%A6r-42a68051/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin className="text-darkblue xs:h-35 xs:w-35 lg:h-50 lg:w-50" />
-          </a>
-        </div>
-      </div>
+  <div className="flex flex-row md:flex-col gap-2 justify-center">
+    <a
+      href="https://www.instagram.com/martinankjaer/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaInstagramSquare className="text-darkblue h-10 w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 transition-transform duration-200 hover:scale-110" />
+    </a>
+    <a
+      href="https://www.facebook.com/profile.php?id=1513713345"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaFacebookSquare className="text-darkblue h-10 w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 transition-transform duration-200 hover:scale-110" />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/martin-ankj%C3%A6r-42a68051/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaLinkedin className="text-darkblue h-10 w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 transition-transform duration-200 hover:scale-110" />
+    </a>
+  </div>
+</div>
+
+
     </div>
   );
 };
