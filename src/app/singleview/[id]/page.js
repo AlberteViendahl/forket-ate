@@ -84,8 +84,8 @@ export default function SingleviewPage() {
               <div className="flex justify-center sm:justify-start text-lg mb-2">
                 {renderStars(Math.round(review.rating))}
               </div>
-              <p className="italic text-gray-700 mb-2">"{review.comment}"</p>
-              <h3 className="font-bold text-gray-900">{review.reviewerName}</h3>
+              <p className="italic text-brown mb-2">"{review.comment}"</p>
+              <h3 className="font-bold text-brown">{review.reviewerName}</h3>
             </div>
           ))}
         </div>

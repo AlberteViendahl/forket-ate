@@ -5,7 +5,8 @@ import Nav from "@/components/Nav";
 
 export async function generateMetadata() {
   return {
-    title: "Byg Dit Perfekte Hjem: Udforsk Stilarter, Materialer & Inspiration",
+    title:
+      "Inspiration til Nybyg | Stil, Materialer & Arkitekttegnet Husdesign",
     description:
       "Få inspiration til dit drømmehjem med stil, materialer og detaljer fra rigtige projekter. Klik og udforsk nu!",
   };

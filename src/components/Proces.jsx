@@ -1,7 +1,6 @@
 import Knap from "@/components/Knap";
 import Link from "next/link";
 
-
 const Proces = () => {
   return (
     <section className=" bg-beige bg-image ">
@@ -39,7 +38,7 @@ const Proces = () => {
         </div>
       </div>
 
-      <div className="flex justify-evenly">
+      <div className=" flex md:justify-around xs:justify-evenly">
         <div>
           <img
             className="md:h-200 md:w-200 xs:h-150 xs:w-150"
@@ -53,7 +52,8 @@ const Proces = () => {
         <img className="hidden md:block" src="/img/pil.svg" alt="en brun pil" />
         <div className="">
           <img
-            className="md:h-200 md:w-200 xs:h-150 xs:w-150"
+            className="md:h-200 md:w-200 xs:h-150 xs:w-150 
+        "
             src="/img/proces5.svg"
             alt="en telefon"
           />
@@ -71,7 +71,7 @@ const Proces = () => {
         </div>
       </div>
       <Link href="/Info">
-      <Knap label="Vil du vide mere?" />
+        <Knap label="Vil du vide mere?" />
       </Link>
     </section>
   );

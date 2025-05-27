@@ -5,7 +5,7 @@ import Info from "@/components/Info";
 export async function generateMetadata() {
   return {
     title:
-      "Om Ankjær Totalentreprise – Martin Ankjær bygger hjem med hjerte og håndværk",
+      "Om Martin Ankjær | Professionel Tømrer & Totalentreprenør i Nordsjælland",
     description:
       "Skab dit drømmehjem med Ankjær Totalentreprise. Høj kvalitet og tæt dialog hele vejen. Få et tilbud nu!",
   };

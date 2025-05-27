@@ -5,7 +5,8 @@ import ServiceIndhold from "@/components/ServiceIndhold";
 
 export async function generateMetadata() {
   return {
-    title: "Følg Dit Byggeprojekt i Realtid – Ankjær Totalentreprises App",
+    title:
+      "Totalentreprise med Overblik | Følg Dit Husbyggeri i Realtid med Vores App",
     description:
       "Hold styr på dit byggeri når som helst og hvor som helst. Få opdateringer og kontakt os let. Prøv appen i dag!",
   };
