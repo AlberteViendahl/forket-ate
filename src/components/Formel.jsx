@@ -41,7 +41,7 @@ const Formel = () => {
   return (
     <div className="bg-beige bg-image md:pb-20 pd:x-20 md:pt-20 xs:p-5 ">
       <section className=" bg-white rounded-15 shadow xs:m-5">
-        <h1 className="text-brown font-extrabold text-center xs:text-2xl md:text-5xl pb-10 pt-5">
+        <h1 className="text-brown font-extrabold text-center xs:text-3xl md:text-5xl pb-10 pt-5">
           BOOK ET MØDE
         </h1>
         <div className="sm:grid sm:grid-cols-3 pt-10">

@@ -41,7 +41,7 @@ export default function Loading() {
           playsInline
         />
         <h1
-          className="absolute md:top-1/2 xs:top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white
+          className="absolute md:top-1/2 xs:top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white
  lg:text-7xl xs:text-2xl  md:text-6xl font-bold text-nowrap"
         >
           ANKJÆR TOTALENTREPRISE

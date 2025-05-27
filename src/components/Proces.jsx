@@ -4,7 +4,7 @@ import Link from "next/link";
 const Proces = () => {
   return (
     <section className=" bg-beige bg-image ">
-      <h2 className="text-3xl text-brown font-extrabold flex justify-center py-10">
+      <h2 className="md:text-3xl xs:text-xl text-brown font-extrabold flex justify-center py-10">
         Fra tanker til drømmehjem
       </h2>
       <div className="md:flex md:justify-around xs:grid xs:grid-cols-1">

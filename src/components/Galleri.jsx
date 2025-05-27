@@ -1,7 +1,7 @@
 const Galleri = () => {
   return (
     <section className="bg-brown p-6 sm:p-10 md:p-20">
-      <h1 className="text-center text-3xl xs:text-2xl md:text-5xl p-2 text-white font-extrabold pb-6 md:pb-10">
+      <h1 className="text-center  xs:text-3xl md:text-5xl p-2 text-white font-extrabold pb-6 md:pb-10">
         INSPIRATION
       </h1>
 

@@ -1,7 +1,7 @@
 const Info = () => {
   return (
     <div className="flex flex-col mt-20 gap-6 px-4 pt-4 pb-4 sm:px-8 md:px-16 lg:px-24 max-w-4xl md:mx-auto xs:m-10 my-10 bg-white rounded-15">
-      <h1 className="md:text-5xl xs:text-2xl font-bold text-brown pt-5 text-center pb-10">
+      <h1 className="md:text-5xl xs:text-3xl font-bold text-brown pt-5 text-center pb-10">
         STIFTEREN BAG <br></br> ANKJÆR TOTALENTREPRISE
       </h1>
       <img
