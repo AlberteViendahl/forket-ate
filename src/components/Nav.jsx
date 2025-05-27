@@ -21,7 +21,7 @@ function Navigation() {
 
   return (
     <header className="relative">
-      <nav className="flex justify-between items-center p-5 pr-10 bg-lightblue text-darkblue">
+      <nav className="flex justify-between items-center p-5 pr-20 bg-lightblue text-darkblue">
         {/* Logo */}
         <Link href="/Forside">
           <img className="h-75 ml-10" src="/img/logo.svg" alt="logo ikon" />

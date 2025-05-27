@@ -1,8 +1,8 @@
 const Info = () => {
   return (
-    <div className="flex flex-col gap-6 px-4 pt-4 pb-4 sm:px-8 md:px-16 lg:px-24 max-w-4xl mx-auto my-10 bg-white rounded-15">
-      <h1 className="text-2xl font-bold">
-        Om Martin Ankjær – manden bag Ankjær Totalentreprise
+    <div className="flex flex-col mt-20 gap-6 px-4 pt-4 pb-4 sm:px-8 md:px-16 lg:px-24 max-w-4xl mx-auto my-10 bg-white rounded-15">
+      <h1 className="text-5xl font-bold text-brown pt-5 text-center pb-10">
+        STIFTEREN BAG <br></br> ANKJÆR TOTALENTREPRISE
       </h1>
       <img
         src="/img/martinVinker.jpeg"
@@ -10,12 +10,12 @@ const Info = () => {
         className="h-[200px] w-[300px] rounded-12"
       />
 
-      <h2 className="text-xl font-semibold">
+      <h2 className="text-xl font-semibold text-brown">
         Et hus er mere end bare mursten – det er en drøm, der skal bygges fra
         bunden.
       </h2>
 
-      <p>
+      <p className="text-brown">
         Hos Ankjær Totalentreprise handler det ikke bare om at bygge huse – det
         handler om at skabe hjem. Virksomheden drives af Martin Ankjær, en
         passioneret og erfaren enkeltmandsentreprenør med øje for kvalitet,
@@ -27,7 +27,7 @@ const Info = () => {
         resultatet bliver præcis, som kunden har drømt om.
       </p>
 
-      <p className="indent-4">
+      <p className="indent-4 text-brown">
         <q className="italic">
           Jeg bygger kun ét hus ad gangen – så jeg kan give hver kunde min fulde
           opmærksomhed.
@@ -35,7 +35,7 @@ const Info = () => {
         <br />– Martin Ankjær
       </p>
 
-      <p>
+      <p className="text-brown">
         Martin samarbejder med et netværk af nøje udvalgte håndværkere og
         underleverandører, som han stoler på og har arbejdet med gennem flere
         år. Det sikrer både høj kvalitet og en gnidningsfri byggeproces. Den
@@ -52,11 +52,11 @@ const Info = () => {
         playsInline
       />
 
-      <h3 className="font-bold text-lg">
+      <h3 className="font-bold text-lg text-brown">
         Kvalitet. Troværdighed. Personlighed.
       </h3>
 
-      <p>
+      <p className="text-brown">
         Ankjær Totalentreprise bygger ikke typehuse. Hvert byggeri er unikt og
         opføres i tæt dialog med kunden. Det betyder, at du som kunde får
         indflydelse hele vejen og kan være tryg ved, at huset bliver præcis, som
@@ -72,8 +72,17 @@ const Info = () => {
         alt="vedbæk hus"
         className="h-[200px] w-[300px] rounded-12"
       />
-      <h4 className="font-bold">Bæredygtighed og miljø – en integreret del af byggeriet</h4>
-      <p>Hos Ankjær Totalentreprise bliver alle byggerier udført i overensstemmelse med gældende miljøkrav og bæredygtige standarder. Det betyder, at du som kunde ikke behøver at tage stilling til tekniske detaljer om energirammer, materialevalg eller lovgivning – det er en naturlig del af Martins arbejde. Kvalitet og ansvarlighed går hånd i hånd i alle projekter.</p>
+      <h4 className="font-bold text-brown">
+        Bæredygtighed og miljø – en integreret del af byggeriet
+      </h4>
+      <p className="text-brown">
+        Hos Ankjær Totalentreprise bliver alle byggerier udført i
+        overensstemmelse med gældende miljøkrav og bæredygtige standarder. Det
+        betyder, at du som kunde ikke behøver at tage stilling til tekniske
+        detaljer om energirammer, materialevalg eller lovgivning – det er en
+        naturlig del af Martins arbejde. Kvalitet og ansvarlighed går hånd i
+        hånd i alle projekter.
+      </p>
     </div>
   );
 };
