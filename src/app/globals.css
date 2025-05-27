@@ -38,12 +38,12 @@ body {
 
 h1 {
   font-family: "playfair";
-  font-size: 48px;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-family: "playfair";
-  font-size: 22px;
 }
 
 p {

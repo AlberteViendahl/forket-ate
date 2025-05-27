@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Service = () => {
   return (
-    <section className="m-20 rounded-12 bg-white">
+    <section className="md:m-20 xs:m-10 rounded-12 bg-white ">
       <h1 className="text-brown font-extrabold text-center xs:text-2xl md:text-5xl pt-10">
         FØLG DIT <br /> BYGGEPROJEKT
       </h1>
