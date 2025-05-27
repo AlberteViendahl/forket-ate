@@ -21,10 +21,10 @@ function Navigation() {
 
   return (
     <header className="relative">
-      <nav className="flex justify-between items-center p-4 bg-lightblue text-brown">
+      <nav className="flex justify-between items-center p-5 bg-lightblue text-brown">
         {/* Logo */}
         <Link href="/Forside">
-          <img className="h-75" src="/img/logo.svg" alt="logo ikon" />
+          <img className="h-75 ml-10" src="/img/logo.svg" alt="logo ikon" />
         </Link>
 
         {/* Burger/kryds ikon – kun mobil */}
@@ -62,7 +62,7 @@ function Navigation() {
 
         {/* Menu links */}
         <ul
-          className={`fixed top-0 right-0 h-full w-80 bg-white shadow-lg transform transition-transform duration-300 ease-in-out flex-col gap-6 p-8
+          className={`fixed top-0 right-0 h-full w-80 mr-[15px] bg-white shadow-lg transform transition-transform duration-300 ease-in-out flex-col gap-6 p-8
             ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
             md:static md:flex md:flex-row md:gap-10 md:p-0 md:bg-transparent md:shadow-none md:translate-x-0
             flex z-20`}

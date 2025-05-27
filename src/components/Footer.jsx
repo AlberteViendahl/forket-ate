@@ -21,11 +21,29 @@ const Footer = () => {
         </p>
         <p className="pb-10 text-brown">ma@classichouse.dk</p>
       </div>
-      <div className="md:col-start-3 self-end md:pb-5">
-        <div className="flex justify-center ">
-          <FaInstagramSquare className="text-brown xs:h-35 xs:w-35 lg:h-50 lg:w-50" />
-          <FaFacebookSquare className="text-brown xs:h-35 xs:w-35 lg:h-50 lg:w-50" />
-          <FaLinkedin className="text-brown xs:h-35 xs:w-35 lg:h-50 lg:w-50" />
+      <div className="md:col-start-3 flex justify-center">
+        <div className="flex justify-center flex-col">
+        <a
+      href="https://www.instagram.com/martinankjaer/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaInstagramSquare className="text-brown xs:h-35 xs:w-35 lg:h-50 lg:w-50" />
+    </a>
+    <a
+      href="https://www.facebook.com/profile.php?id=1513713345"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaFacebookSquare className="text-brown xs:h-35 xs:w-35 lg:h-50 lg:w-50" />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/martin-ankj%C3%A6r-42a68051/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaLinkedin className="text-brown xs:h-35 xs:w-35 lg:h-50 lg:w-50" />
+    </a>
         </div>
       </div>
     </div>

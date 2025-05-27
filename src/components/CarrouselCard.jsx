@@ -72,7 +72,7 @@ const CarrouselCard = () => {
                   height={200}
                   className="object-cover w-full h-[180px] rounded"
                 />
-                <h2 className="text-center mt-2 font-semibold text-darkblue">
+                <h2 className="text-center mt-2 font-semibold text-brown">
                   {card.city}
                 </h2>
               </div>
