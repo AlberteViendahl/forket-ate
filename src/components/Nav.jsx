@@ -62,7 +62,7 @@ function Navigation() {
 
         {/* Menu links */}
         <ul
-          className={`fixed top-0 right-0 h-full w-80 mr-[15px] bg-white shadow-lg transform transition-transform duration-300 ease-in-out flex-col gap-6 p-8
+          className={`fixed top-0 right-0 h-full w-80 mr-10 bg-white shadow-lg transform transition-transform duration-300 ease-in-out flex-col gap-6 p-8
             ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
             md:static md:flex md:flex-row md:gap-10 md:p-0 md:bg-transparent md:shadow-none md:translate-x-0
             flex z-20`}
