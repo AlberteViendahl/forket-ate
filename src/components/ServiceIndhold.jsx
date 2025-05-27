@@ -3,7 +3,7 @@ import Link from "next/link";
 const Service = () => {
   return (
     <section className="m-20 rounded-12 bg-white">
-      <h1 className="text-brown font-extrabold text-center text-5xl pt-10">
+      <h1 className="text-brown font-extrabold text-center xs:text-2xl md:text-5xl pt-10">
         FØLG DIT <br /> BYGGEPROJEKT
       </h1>
 
@@ -14,10 +14,10 @@ const Service = () => {
           className=" h-[80%] ml-10 mt-10 "
         />
         <div>
-          <h2 className="font-bold text-brown mt-10">
+          <h2 className="font-bold xs:text-xl text-center text-brown mt-10">
             Følg med hele vejen – fra første spadestik til nøgleoverdragelse
           </h2>
-          <p className="text-lg text-brown mt-5 w-[440px]">
+          <p className="text-lg text-brown mt-5 xs:p-5 xs:w-300px md:w-[440px]">
             Med vores app får du som kunde dit eget login, hvor du nemt kan
             følge med i byggeprocessen af dit nye hjem – trin for trin. Du får
             adgang til en personlig side, hvor du kan se opdateringer, milepæle
@@ -33,7 +33,7 @@ const Service = () => {
             fuld gennemsigtighed i processen.
           </p>
           <Link href="/App">
-            <div className="mt-10 flex">
+            <div className="mt-10 pb-5 p-5 flex">
               <img
                 src="/img/GoogleP.png"
                 alt="logo google play"

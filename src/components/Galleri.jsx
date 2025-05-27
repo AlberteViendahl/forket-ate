@@ -1,7 +1,7 @@
 const Galleri = () => {
   return (
     <section className="bg-brown p-6 sm:p-10 md:p-20">
-      <h1 className="text-center text-3xl sm:text-4xl md:text-5xl p-2 text-white font-extrabold pb-6 md:pb-10">
+      <h1 className="text-center text-3xl xs:text-2xl md:text-5xl p-2 text-white font-extrabold pb-6 md:pb-10">
         INSPIRATION
       </h1>
 
@@ -14,8 +14,8 @@ const Galleri = () => {
       <br />
       <p className="text-white mx-auto max-w-[600px] text-sm sm:text-base flex items-center gap-2">
         Dette gør det nemt for dig at finde præcis de elementer, der passer til
-        din stil og dine behov. Det betyder meget for os, at du får den
-        perfekte blanding mellem kvalitet og sætter dit eget præg.
+        din stil og dine behov. Det betyder meget for os, at du får den perfekte
+        blanding mellem kvalitet og sætter dit eget præg.
       </p>
       <br />
       <p className="text-white mx-auto max-w-[600px] text-sm sm:text-base flex items-center gap-2">
@@ -40,7 +40,8 @@ const Galleri = () => {
             <div className="absolute left-full top-1/2 -translate-y-1/2 ml-2 w-48 p-2 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
               <h2 className="text-m">Døre og vinduer.</h2>
               <p className="text-[12px]">
-                Træ/alu rammer med tre-lags energiruder, farver, U-værdi og monteringsinfo.
+                Træ/alu rammer med tre-lags energiruder, farver, U-værdi og
+                monteringsinfo.
               </p>
             </div>
           </div>
@@ -53,7 +54,8 @@ const Galleri = () => {
             <div className="absolute left-full top-1/2 -translate-y-1/2 ml-2 w-48 p-2 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
               <h2 className="text-m">Ydervægge - Hvid netpuds.</h2>
               <p className="text-[12px]">
-                Opbygning med 410 mm ydevæg med hvid netpuds, U-værdi, isolering og lag.
+                Opbygning med 410 mm ydevæg med hvid netpuds, U-værdi, isolering
+                og lag.
               </p>
             </div>
           </div>
@@ -61,7 +63,10 @@ const Galleri = () => {
 
         {/* Billede 2 */}
         <div className="relative col-span-1 sm:col-span-1 md:col-span-2 m-0 p-0">
-          <img src="/img/2.svg" className="w-full h-full object-cover rounded-12" />
+          <img
+            src="/img/2.svg"
+            className="w-full h-full object-cover rounded-12"
+          />
           <div className="absolute top-[50%] right-[29%] group">
             <img
               src="/img/dot.svg"
@@ -79,7 +84,10 @@ const Galleri = () => {
 
         {/* Billede 3 */}
         <div className="relative col-span-1 sm:col-span-1 md:col-span-2 m-0 p-0">
-          <img src="/img/3.svg" className="w-full h-full object-cover rounded-12" />
+          <img
+            src="/img/3.svg"
+            className="w-full h-full object-cover rounded-12"
+          />
           <div className="absolute top-[65%] right-[29%] group">
             <img
               src="/img/dot.svg"
@@ -97,7 +105,10 @@ const Galleri = () => {
 
         {/* Billede 4 */}
         <div className="relative col-span-1 sm:col-span-1 md:col-span-4 m-0 p-0">
-          <img src="/img/4.svg" className="w-full h-full object-cover rounded-12" />
+          <img
+            src="/img/4.svg"
+            className="w-full h-full object-cover rounded-12"
+          />
           <div className="absolute top-[44%] right-[18%] group">
             <img
               src="/img/dot.svg"
@@ -115,7 +126,10 @@ const Galleri = () => {
 
         {/* Billede 5 */}
         <div className="relative col-span-1 sm:col-span-1 md:col-span-3 m-0 p-0">
-          <img src="/img/5.svg" className="w-full h-full object-cover rounded-12" />
+          <img
+            src="/img/5.svg"
+            className="w-full h-full object-cover rounded-12"
+          />
           <div className="absolute top-[15%] right-[29%] group">
             <img
               src="/img/dot.svg"
@@ -131,9 +145,16 @@ const Galleri = () => {
 
         {/* Billede 6 */}
         <div className="relative col-span-1 sm:col-span-2 md:col-span-3 row-span-2 m-0 p-0">
-          <img src="/img/8.svg" className="w-full h-full object-cover rounded-12" />
+          <img
+            src="/img/8.svg"
+            className="w-full h-full object-cover rounded-12"
+          />
           <div className="absolute top-[15%] right-[29%] group">
-            <img src="/img/dot.svg" alt="dot" className="transition-transform duration-300 transform hover:scale-110 cursor-pointer" />
+            <img
+              src="/img/dot.svg"
+              alt="dot"
+              className="transition-transform duration-300 transform hover:scale-110 cursor-pointer"
+            />
             <div className="absolute z-50 left-full top-1/2 -translate-y-1/2 ml-2 w-48 p-2 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto">
               <h2 className="text-m">Tagterrasse opbygning.</h2>
               <p className="text-[12px]">
@@ -142,7 +163,11 @@ const Galleri = () => {
             </div>
           </div>
           <div className="absolute top-[50%] left-[15%] group">
-            <img src="/img/dot.svg" alt="dot" className="transition-transform duration-300 transform hover:scale-110 cursor-pointer" />
+            <img
+              src="/img/dot.svg"
+              alt="dot"
+              className="transition-transform duration-300 transform hover:scale-110 cursor-pointer"
+            />
             <div className="absolute z-50 left-full top-1/2 -translate-y-1/2 ml-2 w-48 p-2 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto">
               <h2 className="text-m">Ydervæg mod garage</h2>
               <p className="text-[12px]">
@@ -154,9 +179,16 @@ const Galleri = () => {
 
         {/* Billede 7 */}
         <div className="relative col-span-1 sm:col-span-1 md:col-span-2 m-0 p-0">
-          <img src="/img/6.svg" className="w-full h-full object-cover rounded-12" />
+          <img
+            src="/img/6.svg"
+            className="w-full h-full object-cover rounded-12"
+          />
           <div className="absolute top-[40%] right-[35%] group">
-            <img src="/img/dot.svg" alt="dot" className="transition-transform duration-300 transform hover:scale-110 cursor-pointer" />
+            <img
+              src="/img/dot.svg"
+              alt="dot"
+              className="transition-transform duration-300 transform hover:scale-110 cursor-pointer"
+            />
             <div className="absolute z-50 left-full top-1/2 -translate-y-1/2 ml-2 w-48 p-2 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto">
               <h2 className="text-m">Letvægge med gipsplader.</h2>
               <p className="text-[12px]">
@@ -168,9 +200,16 @@ const Galleri = () => {
 
         {/* Billede 8 */}
         <div className="relative col-span-1 sm:col-span-1 md:col-span-1 m-0 p-0">
-          <img src="/img/7.svg" className="w-full h-full object-cover rounded-12" />
+          <img
+            src="/img/7.svg"
+            className="w-full h-full object-cover rounded-12"
+          />
           <div className="absolute top-[65%] right-[29%] group">
-            <img src="/img/dot.svg" alt="dot" className="transition-transform duration-300 transform hover:scale-110 cursor-pointer" />
+            <img
+              src="/img/dot.svg"
+              alt="dot"
+              className="transition-transform duration-300 transform hover:scale-110 cursor-pointer"
+            />
             <div className="absolute z-50 left-full top-1/2 -translate-y-1/2 ml-2 w-48 p-2 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto">
               <h2 className="text-m">Energiklasse og tæthed.</h2>
               <p className="text-[12px]">

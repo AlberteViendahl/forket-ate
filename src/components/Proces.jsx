@@ -7,19 +7,20 @@ const Proces = () => {
       <h2 className="text-3xl text-brown font-extrabold flex justify-center py-10">
         Fra tanker til drømmehjem
       </h2>
-      <div className="flex md:justify-around xs:justify-evenly">
-        <div>
+      <div className="md:flex md:justify-around xs:grid xs:grid-cols-1">
+        <div className="flex flex-col items-center">
           <img
-            className="md:h-200 md:w-200 xs:h-150 xs:w-150"
+            className=" xs:h-[150px] xs:w-[150px]"
             src="/img/proces1.svg"
             alt="to der giver hånd"
           />
-          <p className="text-center text-brown font-bold">
-            1. Uforpligtende snak <br></br>om dit drømmehjem
+          <p className="text-center text-brown font-bold mt-4">
+            1. Uforpligtende snak <br />
+            om dit drømmehjem
           </p>
         </div>
         <img className="hidden md:block" src="/img/pil.svg" alt="en brun pil" />
-        <div>
+        <div className="flex flex-col items-center">
           <img
             className="md:h-200 md:w-200 xs:h-150 xs:w-150"
             src="/img/proces2.svg"
@@ -28,7 +29,7 @@ const Proces = () => {
           <p className=" text-center text-brown font-bold">2. Bygge aftale</p>
         </div>
         <img className="hidden md:block" src="/img/pil.svg" alt="en brun pil" />
-        <div>
+        <div className="flex flex-col items-center">
           <img
             className="md:h-200 md:w-200 xs:h-150 xs:w-150"
             src="/img/proces3.svg"
@@ -38,8 +39,8 @@ const Proces = () => {
         </div>
       </div>
 
-      <div className=" flex md:justify-around xs:justify-evenly">
-        <div>
+      <div className="md:flex md:justify-around xs:grid xs:grid-cols-1">
+        <div className="flex flex-col items-center">
           <img
             className="md:h-200 md:w-200 xs:h-150 xs:w-150"
             src="/img/proces4.svg"
@@ -50,7 +51,7 @@ const Proces = () => {
           </p>
         </div>
         <img className="hidden md:block" src="/img/pil.svg" alt="en brun pil" />
-        <div className="">
+        <div className="flex flex-col items-center">
           <img
             className="md:h-200 md:w-200 xs:h-150 xs:w-150 
         "
@@ -61,7 +62,7 @@ const Proces = () => {
         </div>
 
         <img className="hidden md:block" src="/img/pil.svg" alt="en brun pil" />
-        <div>
+        <div className="flex flex-col items-center">
           <img
             className="md:h-200 md:w-200 xs:h-150 xs:w-150"
             src="/img/proces6.svg"
