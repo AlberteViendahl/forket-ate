@@ -7,6 +7,15 @@ import Proces from "@/components/Proces";
 import Pil from "@/components/Pil";
 import Head from "next/head";
 
+export async function generateMetadata() {
+  return {
+    title:
+      "Forside | Ankjær Totalentreprise | Dit arkitekttegnede hjem fra idé til virkelighedin Virksomhed",
+    description:
+      "Vi tegner og bygger dit arkitekttegnede drømmehus fra bunden – præcist som du ønsker det. Kontakt os i dag!",
+  };
+}
+
 export default function Loading() {
   return (
     <div className="overflow-hidden">
