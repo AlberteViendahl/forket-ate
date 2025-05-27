@@ -86,21 +86,17 @@ module.exports = {
         xl: "1536px",
       },
 
-      keyframes: {
-        "fade-in-up": {
-          "10%": {
-            opacity: "0",
-            transform: "translateY(20px)",
-          },
-          "100%": {
-            opacity: "1",
-            transform: "translateY(0)",
-          },
-        },
-      },
       animation: {
-        "fade-in-up": "fade-in-up 1s ease-out forwards",
+        swipe: 'swipe 1.5s ease-in-out infinite',
+      },
+      keyframes: {
+        swipe: {
+          '0%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(20px)' },
+          '100%': { transform: 'translateX(0)' },
+        },
       },
     },
   },
-};
+  plugins: [],
+}
