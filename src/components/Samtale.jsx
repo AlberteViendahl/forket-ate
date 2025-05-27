@@ -1,7 +1,7 @@
 import Link from "next/link";
 const Samtale = () => {
   return (
-    <section className="bg-beige">
+    <section className="bg-beige text-darkblue">
       <h2 className="text-center text-2xl p-5">Dit hus i billeder</h2>
       <div className="flex justify-center">
         <p className="w-300 mb-5">
@@ -50,7 +50,7 @@ const Samtale = () => {
         />
         <img className="h-30 pl-3" src="/img/send.svg" alt="send" />
       </div>
-      <div className="bg-white flex justify-center p-5">
+      <div className="bg-lightblue flex justify-center p-5">
         <Link href="/App">
           <img src="/img/undo.svg" alt="Gå tilbage knap" />
         </Link>

@@ -3,7 +3,7 @@ import Opdatering from "./Opdatering";
 const MobilSide = () => {
   return (
     <div className="bg-beige flex justify-center px-4 py-10">
-      <div className="flex flex-col items-center text-center max-w-sm">
+      <div className="flex flex-col items-center text-center max-w-sm text-darkblue">
         <h2 className="mb-7 text-2xl font-semibold">
           Velkommen, Camilla & Michael
         </h2>
