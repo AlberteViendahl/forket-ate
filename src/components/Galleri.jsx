@@ -1,3 +1,6 @@
+import DownloadButton from "./DownloadButton";
+
+
 const Galleri = () => {
   return (
     <section className="bg-brown p-6 sm:p-10 md:p-20">
@@ -22,6 +25,11 @@ const Galleri = () => {
         Ved at holde musen over de interaktive prikker på billederne, kan du se
         detaljer om de anvendte produkter og materialer.
       </p>
+
+     <div className="flex justify-center my-8">
+  <DownloadButton />
+</div>
+
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4 sm:gap-5 p-4">
         {/* Billede 1 */}
